@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Keyboard Database</title>
+</head>
+<body>
+    <main>
+        <h1>Keyboard Database</h1>
+        <a href="#recSection">&#9660; Recommended Picks</a>
+        <div class="search" id="search">
+            <input class="search-input" id="search-input" placeholder="Search by Name" onkeyup="whileSearch()">
+        </div>
+        
+        <div class="filter" id="filter">
+            <form onchange="whileFilter()" id="filter-form">
+                <span title="Mechanical keyboards have switches under the keys">
+                    <input type="checkbox" id="mech">
+                    <label>Mechanical</label>
+                </span>
+                <span title="Mac-Compatible keyboards have mac-specific keys included">
+                    <input type="checkbox" id="mac">
+                    <label>Mac-Compatible</label>
+                </span>
+                <!-- <span for="connect">Connection Type:
+                    <select name="connect" id="connect">
+                        <option value=""></option>
+                        <option value="wire">wired</option>
+                        <option value="wireless">wireless</option>
+                    </select>
+                </span>
+                <span for="back">Backlight Type:
+                    <select name="back" id="back" placeholder=' '>
+                        <option value=""></option>
+                        <option value="none">none</option>
+                        <option value="white">white</option>
+                        <option value="rgb">rgb</option>
+                    </select>
+                </span>
+                <span for="layout" title="Keyboard sizes fall into four main layouts: compact(60%,68%,75%), tenkeyless/tkl(80%),full-size, and ergonomic">
+                    Layout Type:
+                    <select name="layout" id="layout" placeholder=' '>
+                        <option value=""></option>
+                        <option value="compact">compact</option>
+                        <option value="tkl">tkl</option>
+                        <option value="full">full</option>
+                        <option value="ergonomic">ergonomic</option>
+                    </select>
+                </span> -->
+            </form>
+            <a href="/cilent"><button>RESET FILTER</button></a>
+        </div>
+
+        <div class="mainSection" id="mainSection">
+        <table>
+            <thead>
+                <th>Keyboard</th>
+                <th>Mechanical</th>
+                <th>Connection</th>
+                <th>Backlight</th>
+                <th>Layout</th>
+                <th>Mac-Specific</th>
+                <th>Length</th>
+                <th>Width</th>
+                <th>Height</th>
+                <!-- <th>DELETE</th>
+                <th>EDIT</th> -->
+            </thead>
+            <tbody id="main"></tbody>
+        </table>
+        </div>
+
+        <div class="retailSection" id="retailSection">
+        <h2 id="retailTitle">Retailers:</h2>
+        <table>
+            <thead>
+                <th>Retailer Name</th>
+                <th>Keyboard Name</th>
+                <th>Price</th>
+                <th>Rating</th>
+                <th>Delivery Options</th>
+                <th>Return Days</th>
+                <th>Link</th>
+            </thead>
+            <tbody id="retailers"></tbody>
+        </table>
+        </div>
+
+        <div class=recSection id=recSection>
+        <h2 id="rec">Our Top Picks:</h2>
+        <table>
+            <thead>
+                <th>Keyboard</th>
+                <th>Mechanical</th>
+                <th>Connection</th>
+                <th>Backlight</th>
+                <th>Layout</th>
+                <th>Mac-Specific</th>
+                <th>Rating</th>
+                <th>Price</th>
+            </thead>
+            <tbody id="recommend"></tbody>
+        </table>
+        </div>
+
+    </main>
+
+    <button id="scroll-btn" onclick="scrollUp()"><a class="close">&#9650;</a></button>
+    <script src="scripts.js"></script>
+</body>
+</html>

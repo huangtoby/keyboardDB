@@ -1,0 +1,149 @@
+body{
+    font-family: 'Courier New', monospace !important;
+    background-color: rgba(100, 139, 165, 0.384);
+}
+
+main a{
+    text-decoration: none;
+    color:rgb(24, 68, 117);
+}
+
+main a:visited{
+    color:rgb(24, 68, 117);
+}
+main a:hover{
+    color:rgb(100, 139, 165);
+}
+
+.search{
+    width: 50%;
+    margin: 30px auto 0px;
+    text-align: center;
+}
+
+.search input{
+    font-size: 18px;
+    height: 40px; width: 240px; 
+    border-radius: 7px;
+    padding-left: 15px;
+    font-family: 'Courier New', monospace;
+}
+
+.search input:focus{
+    background: rgba(100, 139, 165, 0.7);
+    color:white;
+}
+
+.filter{
+    display: block;
+    width: 40%;
+    margin: 10px auto 10px;
+    text-align: center;
+}
+
+.filter input{
+    height: 15px; width: 15px;
+}
+
+.filter label{
+    margin-right: 20px;
+}
+
+.filter label:hover{
+    color:rgb(24, 68, 117);
+}
+
+.filter button{
+    padding:6px 15px; 
+    font-weight: bold;
+    color: black;
+    background: rgb(100, 139, 165); 
+    border-radius: 3px; 
+    margin: 15px 0px 0px;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.filter button:hover {
+    background-color: rgba(85, 85, 85, 0.637);
+}
+
+table{
+    height: auto;
+    width: 1200px;
+    margin: 40px auto 500px;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 16px;
+}
+
+th, td{
+    padding: 8px;
+}
+
+th{
+    font-size: 18px;
+}
+
+td button{
+    font-family: 'Courier New', monospace;
+    padding: 0;
+    border: none;
+    background: none;
+    font-weight: bold;
+    color: rgb(24, 68, 117);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+td button:hover{
+    color: salmon;
+}
+
+h2{
+    margin-left: 10vw;
+}
+
+.retailSection, .recSection{
+    margin-top: 1000px;
+}
+
+#scroll-btn{
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+}
+
+#scroll-btn .close{
+    position: absolute; 
+    bottom: 0px;  right: 0px; 
+    font-size: 25px;
+    color: white;
+    background: rgb(100, 139, 165); 
+    height: 50px;  width: 50px;    
+    line-height: 30px;
+    border-radius: 15px;
+    border-color: rgba(85, 85, 85, 0.637);
+    border-style: solid;
+    border-width: 1px;
+}
+
+#scroll-btn .close:hover {
+    background-color: rgba(85, 85, 85, 0.637);
+}
+
+
